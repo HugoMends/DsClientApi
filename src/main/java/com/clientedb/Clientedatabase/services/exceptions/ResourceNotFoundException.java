@@ -1,0 +1,10 @@
+package com.clientedb.Clientedatabase.services.exceptions;
+
+public class ResourceNotFoundException extends RuntimeException{
+
+	public ResourceNotFoundException(String msg) {
+		super(msg);
+	}
+	
+	
+}
