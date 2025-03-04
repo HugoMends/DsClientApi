@@ -51,4 +51,10 @@ public class ClientService {
 		client = repo.save(client);
 		return new ClientDTO(client);
 	}
+	
+	@Transactional
+	public void delete(Long id) {
+		repo.deleteById(id);
+		
+	}
 }
